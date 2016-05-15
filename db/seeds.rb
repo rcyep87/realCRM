@@ -1,1 +1,1 @@
-City.create(name: "Austin", 2000000, 54)
+City.create(name: "Austin", population: 2000000, avg_don: 54)
