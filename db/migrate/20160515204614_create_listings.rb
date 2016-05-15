@@ -9,8 +9,8 @@ class CreateListings < ActiveRecord::Migration
       t.integer :baths
       t.integer :sqft
       t.integer :built
-      t.state :belongs_to
-      t.city :belongs_to
+      t.belongs_to :state, index: true, foreign_key: true
+      t.belongs_to :city,  index: true, foreign_key: true
 
       t.timestamps null: false
     end
