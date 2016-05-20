@@ -1,0 +1,26 @@
+<center><h1>Listing's for Austin, TX</h1></center>
+
+<% @listings.each do |listing| %>
+  <table>
+    <tr>
+      <th>Price</th>
+      <th>Address1</th>
+      <th>Address2</th>
+      <th>Zipcode</th>
+      <th># of Bedrooms</th>
+      <th># of Baths</th>
+      <th>Square Feet</th>
+      <th>Built</th>
+    </tr>
+    <tr>
+      <td><%= listing.price    %></td>
+      <td><%= listing.address1 %></td>
+      <td><%= listing.address2 %></td>
+      <td><%= listing.zipcode  %></td>
+      <td><%= listing.bedrooms %></td>
+      <td><%= listing.baths    %></td>
+      <td><%= listing.sqft     %></td>
+      <td><%= listing.built    %></td>
+    </tr>
+  </table>
+<% end %>
